@@ -19,7 +19,14 @@
 .gridGallery {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 
+  figcaption {
+    opacity: 0;
+  }
+
   @media #{$md} {
+    figcaption {
+      opacity: 1;
+    }
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
   @media #{$lg} {
