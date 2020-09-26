@@ -18,7 +18,7 @@ export default function Home({ darkMode }) {
       .then((data) => setData(data))
       .catch((error) => console.log(error));
   }, []);
-  let list = null;
+  let list = <p>Loading...</p>;
   if (data !== null) {
     list = data
       .sort(sortList)
@@ -27,7 +27,7 @@ export default function Home({ darkMode }) {
   return (
     <>
       <Head>
-        <title>Bollywood - Hall of Fame</title>
+        <title>Hindi Films - Hall of Fame</title>
         <link
           rel='shortcut icon'
           href='https://www.flaticon.com/svg/static/icons/svg/610/610333.svg'
