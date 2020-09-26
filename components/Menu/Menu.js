@@ -4,6 +4,8 @@ import { menu } from './Menu.module.scss';
 import { MdStars } from 'react-icons/md';
 import { RiLightbulbLine } from 'react-icons/ri';
 import { GrContactInfo } from 'react-icons/gr';
+import { BsGrid3X3GapFill } from 'react-icons/bs';
+import { IoIosMale, IoMdFemale } from 'react-icons/io';
 import Context from '../Context/Context';
 
 const MenuButton = React.forwardRef(({ onClick, href }, ref) => (
@@ -19,7 +21,12 @@ const AboutButton = React.forwardRef(({ onClick, href }, ref) => (
 ));
 
 const Menu = () => {
-  const { handleDarkMode } = useContext(Context);
+  const {
+    handleDarkMode,
+    handleViewMode,
+    handleMaleMode,
+    handleFemaleMode,
+  } = useContext(Context);
   return (
     <nav className={menu}>
       <Link href='/' passHref>
@@ -30,6 +37,15 @@ const Menu = () => {
       </Link>
       <a href='#' onClick={handleDarkMode} rel='noopener noreferrer'>
         <RiLightbulbLine />
+      </a>
+      <a href='#' onClick={handleViewMode} rel='noopener noreferrer'>
+        <BsGrid3X3GapFill />
+      </a>
+      <a href='#' onClick={handleMaleMode} rel='noopener noreferrer'>
+        <IoIosMale />
+      </a>
+      <a href='#' onClick={handleFemaleMode} rel='noopener noreferrer'>
+        <IoMdFemale />
       </a>
     </nav>
   );

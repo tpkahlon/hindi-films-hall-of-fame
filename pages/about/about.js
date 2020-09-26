@@ -15,8 +15,9 @@ export default function About({ darkMode }) {
       <Menu />
       <main className='page'>
         <p>
-          Bollywood - Hall of Fame showcase interview of selected actors whose
-          life journey will keep you hooked, with lot of hidden gems to embrace.
+          Hindi Icons - Hall of Fame showcase interview of selected actors and
+          TV personalities whose life journey will keep you hooked, with lot of
+          hidden gems to embrace.
         </p>
         <p>Built with Next.js...</p>
       </main>

@@ -1,28 +1,32 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useContext } from 'react';
 import Head from 'next/head';
 import Menu from '../components/Menu/Menu';
 import Person from '../components/Person/Person';
-import { grid } from '../styles/index.module.scss';
+import Context from '../components/Context/Context.js';
+import { grid, gridGallery } from '../styles/index.module.scss';
 
 const sortList = (a, b) =>
   a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
 
-export default function Home({ darkMode }) {
-  const [data, setData] = useState(null);
-  useEffect(() => {
-    (async () => {
-      const res = await fetch('/data.json');
-      const json = await res.json();
-      return json;
-    })()
-      .then((data) => setData(data))
-      .catch((error) => console.log(error));
-  }, []);
-  let list = <p>Loading...</p>;
+export default function Home() {
+  const { data, maleMode, femaleMode, viewMode } = useContext(Context);
+  let list = <div>Loading...</div>;
   if (data !== null) {
-    list = data
-      .sort(sortList)
-      .map((person, idx) => <Person key={idx} person={person} />);
+    if (maleMode) {
+      list = data
+        .sort(sortList)
+        .filter((item) => item.gender === 'male')
+        .map((person, idx) => <Person key={idx} person={person} />);
+    } else if (femaleMode) {
+      list = data
+        .sort(sortList)
+        .filter((item) => item.gender === 'female')
+        .map((person, idx) => <Person key={idx} person={person} />);
+    } else {
+      list = data
+        .sort(sortList)
+        .map((person, idx) => <Person key={idx} person={person} />);
+    }
   }
   return (
     <>
@@ -36,7 +40,7 @@ export default function Home({ darkMode }) {
       </Head>
       <Menu />
       <main className='page'>
-        <div className={grid}>{list}</div>
+        <div className={viewMode ? `${grid} ${gridGallery}` : grid}>{list}</div>
       </main>
     </>
   );

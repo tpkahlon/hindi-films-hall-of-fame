@@ -15,3 +15,17 @@
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+
+.gridGallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+
+  @media #{$md} {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  @media #{$lg} {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+  @media #{$xl} {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}

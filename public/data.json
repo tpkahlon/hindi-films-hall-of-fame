@@ -3,66 +3,182 @@
     "id": 1,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Nawazuddin_Siddiqui_-_IIFA_2017_Green_Carpet_%2836349709816%29_%28cropped%29.jpg/440px-Nawazuddin_Siddiqui_-_IIFA_2017_Green_Carpet_%2836349709816%29_%28cropped%29.jpg",
     "src": "https://youtu.be/Gzj9PrrtrVQ",
-    "name": "Nawazuddin Siddique"
+    "name": "Nawazuddin Siddique",
+    "gender": "male"
   },
   {
     "id": 2,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/JohnnyLever.jpg/450px-JohnnyLever.jpg",
     "src": "https://youtu.be/cdWGk0weYzE",
-    "name": "Johnny Lever"
+    "name": "Johnny Lever",
+    "gender": "male"
   },
   {
     "id": 3,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/3/36/Ranvir_Shorey_press_meet_Blue_Mountains_%28cropped%29.jpg",
     "src": "https://youtu.be/1dHpLZg6hvM",
-    "name": "Ranveer Shorey"
+    "name": "Ranveer Shorey",
+    "gender": "male"
   },
   {
     "id": 4,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/7/73/SonuNigam01.jpg",
     "src": "https://youtu.be/i2cS82mQsNI",
-    "name": "Sonu Nigam"
+    "name": "Sonu Nigam",
+    "gender": "male"
   },
   {
     "id": 5,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Virendra_Saxena.JPG/440px-Virendra_Saxena.JPG",
     "src": "https://youtu.be/jTekkXk8buE",
-    "name": "Virender Saxena"
+    "name": "Virender Saxena",
+    "gender": "male"
   },
   {
     "id": 6,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Vinay_Pathak_Chalo_Dilli_promotions_at_Radio_City234.png",
     "src": "https://youtu.be/4PsYlkt8cXk",
-    "name": "Vinay Pathak"
+    "name": "Vinay Pathak",
+    "gender": "male"
   },
   {
     "id": 7,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/6/62/Saurabh_Shukla_graces_the_screening_of_Sonata.jpg",
     "src": "https://youtu.be/YUnVoPSLU4M",
-    "name": "Saurabh Shukla"
+    "name": "Saurabh Shukla",
+    "gender": "male"
   },
   {
     "id": 8,
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Sanjay_Mishra_at_60th_Filmfare_Award_%28cropped%29.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMTM0OTU2NDYyNl5BMl5BanBnXkFtZTYwNTYyNDgy._V1_UY1200_CR81,0,630,1200_AL_.jpg",
     "src": "https://youtu.be/8Jnb9xfjocA",
-    "name": "Sanjay Mishra"
+    "name": "Sanjay Mishra",
+    "gender": "male"
   },
   {
     "id": 9,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Pankaj_Tripathi_World_Premiere_Newton_Zoopalast_Berlinale_2017_06.jpg/440px-Pankaj_Tripathi_World_Premiere_Newton_Zoopalast_Berlinale_2017_06.jpg",
     "src": "https://youtu.be/lPR5oqf6U3g",
-    "name": "Pankaj Tripathi"
+    "name": "Pankaj Tripathi",
+    "gender": "male"
   },
   {
     "id": 10,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jitendra_Kumar_%28Jeetu%29.jpg/440px-Jitendra_Kumar_%28Jeetu%29.jpg",
     "src": "https://youtu.be/O6lRVOLZQ5M",
-    "name": "Jitendra Kumar"
+    "name": "Jitendra Kumar",
+    "gender": "male"
   },
   {
     "id": 11,
     "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Ravish_Kumar_%28cropped%29.jpg/440px-Ravish_Kumar_%28cropped%29.jpg",
     "src": "https://youtu.be/m50qOxE7loE",
-    "name": "Ravish Kumar"
+    "name": "Ravish Kumar",
+    "gender": "male"
+  },
+  {
+    "id": 12,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Deepak_Dobriyal_in_2013.jpg",
+    "src": "https://youtu.be/cLyNXfOQeek",
+    "name": "Deepak Dobriyal",
+    "gender": "male"
+  },
+  {
+    "id": 13,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Neena_Gupta.jpg/440px-Neena_Gupta.jpg",
+    "src": "https://youtu.be/ksKwp8rNLSQ",
+    "name": "Neena Gupta",
+    "gender": "female"
+  },
+  {
+    "id": 14,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Sharman_Joshi_still3.jpg/440px-Sharman_Joshi_still3.jpg",
+    "src": "https://youtu.be/UEXyhfBuJuY",
+    "name": "Sharman Joshi",
+    "gender": "male"
+  },
+  {
+    "id": 15,
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BOGY4MTU4ZDctYjE1Yi00ODU3LTg4Y2UtZGM2MzI2Zjc0NzVkL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_.jpg",
+    "src": "https://youtu.be/UEXyhfBuJuY",
+    "name": "Seema Pahwa",
+    "gender": "female"
+  },
+  {
+    "id": 16,
+    "thumbnail": "https://images.mid-day.com/images/2018/apr/Sumeet-Vyas.jpg",
+    "src": "https://youtu.be/WzlWDJR8o04",
+    "name": "Sumeet Vyas",
+    "gender": "male"
+  },
+  {
+    "id": 17,
+    "thumbnail": "https://i2.cinestaan.com/image-bank/1500-1500/64001-65000/64285.jpg",
+    "src": "https://youtu.be/RYdJ6Qh4Wbo",
+    "name": "Vijay Raaz",
+    "gender": "male"
+  },
+  {
+    "id": 18,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Kay_Kay_Menon_at_libas_store.jpg/440px-Kay_Kay_Menon_at_libas_store.jpg",
+    "src": "https://youtu.be/3umLxYjeF60",
+    "name": "Kay Kay Menon",
+    "gender": "male"
+  },
+  {
+    "id": 19,
+    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Akshaye_Khanna_still2.jpg/440px-Akshaye_Khanna_still2.jpg",
+    "src": "https://youtu.be/oVGf29g3gXU",
+    "name": "Akshaye Khanna",
+    "gender": "male"
+  },
+  {
+    "id": 20,
+    "thumbnail": "https://images.fandango.com/ImageRenderer/300/0/redesign/static/img/default_poster.png/0/images/masterrepository/performer%20images/p223235/jaavedjaaferi-1.jpg",
+    "src": "https://youtu.be/Mm4Ygi2uceM",
+    "name": "Jaaved Jaaferi",
+    "gender": "male"
+  },
+  {
+    "id": 21,
+    "thumbnail": "https://www.celebrityborn.com/admin/assets/images/people/4aUfrADczOFtCljl6xHQ_2018_01_01.jpg",
+    "src": "https://youtu.be/FMXHjJgBBf0",
+    "name": "Asrani",
+    "gender": "male"
+  },
+  {
+    "id": 22,
+    "thumbnail": "https://femina.wwmindia.com/content/2020/jan/kanganaranaut1579165389.jpg",
+    "src": "https://youtu.be/NwhpR7Mc5FY",
+    "name": "Kangana Ranaut",
+    "gender": "female"
+  },
+  {
+    "id": 23,
+    "thumbnail": "https://www.pinkvilla.com/files/styles/contentpreview/public/fotojet_2_27.jpg?itok=5hTHjGOW",
+    "src": "https://youtu.be/43QHEhoV1kI",
+    "name": "Ayushmann Khurrana",
+    "gender": "male"
+  },
+  {
+    "id": 24,
+    "thumbnail": "https://static.toiimg.com/photo/msid-69647972/69647972.jpg?492844",
+    "src": "https://youtu.be/7Q2wnDC8tHw",
+    "name": "Renuka Shahane",
+    "gender": "female"
+  },
+  {
+    "id": 25,
+    "thumbnail": "https://images.tribuneindia.com/cms/gall_content/2019/3/2019_3$largeimg14_Thursday_2019_073332055.jpg",
+    "src": "https://youtu.be/DYDldNx3xgQ",
+    "name": "Himani Shivpuri",
+    "gender": "female"
+  },
+  {
+    "id": 26,
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BMjI4MzQyODYwOF5BMl5BanBnXkFtZTgwMTcxMTIzOTE@._V1_UY1200_CR587,0,630,1200_AL_.jpg",
+    "src": "https://youtu.be/rnoL_GdBSpU",
+    "name": "Nana Patekar",
+    "gender": "male"
   }
 ]
