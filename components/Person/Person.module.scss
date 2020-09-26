@@ -16,12 +16,12 @@
     justify-content: center;
   }
   img {
-    width: inherit;
-    height: inherit;
+    max-height: 20rem;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
   }
   figcaption {
-    opacity: 0;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -34,13 +34,18 @@
     word-break: break-word;
     background: $shadowDarkest;
     transition: all 0.4s ease;
+    @media #{$md} {
+      opacity: 0;
+    }
   }
   &:hover,
   &:focus {
     transform: translateY(-0.25rem);
     box-shadow: 0 0 0.5rem 0.25rem $shadowDark;
     figcaption {
-      opacity: 1;
+      @media #{$md} {
+        opacity: 1;
+      }
     }
   }
 }
