@@ -1,10 +1,17 @@
 import { createContext } from 'react';
 
 const LabelContext = createContext({
-  darkMode: false,
-  viewMode: false,
+  app: {
+    data: null,
+    darkMode: null,
+    viewMode: null,
+    maleMode: null,
+    femaleMode: null,
+  },
   handleDarkMode: () => {},
   handleViewMode: () => {},
+  handleMaleMode: () => {},
+  handleFemaleMode: () => {},
 });
 
 export default LabelContext;

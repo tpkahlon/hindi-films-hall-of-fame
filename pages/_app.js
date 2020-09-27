@@ -4,22 +4,26 @@ import React, { useEffect, useState } from 'react';
 import Context from '../components/Context/Context.js';
 
 const MyApp = ({ Component, pageProps }) => {
-  const [data, setData] = useState(null);
-  const [darkMode, setDarkMode] = useState(false);
-  const [viewMode, setViewMode] = useState(false);
-  const [maleMode, setMaleMode] = useState(false);
-  const [femaleMode, setFemaleMode] = useState(false);
-  const handleDarkMode = () => setDarkMode(!darkMode);
-  const handleViewMode = () => setViewMode(!viewMode);
-  const handleMaleMode = () => setMaleMode(!maleMode);
-  const handleFemaleMode = () => setFemaleMode(!femaleMode);
+  const [app, setApp] = useState({
+    data: null,
+    darkMode: null,
+    viewMode: null,
+    maleMode: null,
+    femaleMode: null,
+  });
+  const handleDarkMode = () => setApp({ ...app, darkMode: !app.darkMode });
+  const handleViewMode = () => setApp({ ...app, viewMode: !app.viewMode });
+  const handleMaleMode = () => setApp({ ...app, maleMode: !app.maleMode });
+  const handleFemaleMode = () =>
+    setApp({ ...app, femaleMode: !app.femaleMode });
+  const { darkMode } = app;
   useEffect(() => {
     (async () => {
       const res = await fetch('/data.json');
       const json = await res.json();
       return json;
     })()
-      .then((data) => setData(data))
+      .then((data) => setApp({ ...app, data }))
       .catch((error) => console.log(error));
   }, []);
   if (typeof document !== 'undefined') {
@@ -32,12 +36,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <Context.Provider
       value={{
-        data,
-        setData,
-        darkMode,
-        viewMode,
-        maleMode,
-        femaleMode,
+        app,
         handleDarkMode,
         handleViewMode,
         handleMaleMode,

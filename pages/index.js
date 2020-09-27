@@ -8,8 +8,9 @@ import { grid, gridGallery } from '../styles/index.module.scss';
 const sortList = (a, b) =>
   a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
 
-export default function Home() {
-  const { data, maleMode, femaleMode, viewMode } = useContext(Context);
+export default function Home({ stuff }) {
+  const { app } = useContext(Context);
+  const { data, maleMode, femaleMode, viewMode } = app;
   let list = <div>Loading...</div>;
   if (data !== null) {
     if (maleMode) {

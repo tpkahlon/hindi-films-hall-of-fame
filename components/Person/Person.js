@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { human } from './Person.module.scss';
 
 const Person = ({ person }) => {
