@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Menu from '../../components/Menu/Menu';
+import Numbers from '../../components/Numbers/Numbers';
 
 export default function About({ darkMode }) {
   return (
@@ -12,6 +13,9 @@ export default function About({ darkMode }) {
           type='image/x-icon'
         />
       </Head>
+      <aside className='aside'>
+        <Numbers />
+      </aside>
       <Menu />
       <main className='page'>
         <h2>About</h2>

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from 'react';
 import ReactLoading from 'react-loading';
 import Head from 'next/head';
+import Numbers from '../components/Numbers/Numbers';
 import Menu from '../components/Menu/Menu';
 import Person from '../components/Person/Person';
 import Context from '../components/Context/Context.js';
@@ -9,7 +10,7 @@ import { grid, gridGallery } from '../styles/index.module.scss';
 const sortList = (a, b) =>
   a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
 
-export default function Home({ stuff }) {
+export default function Home() {
   const { app } = useContext(Context);
   const { data, maleMode, femaleMode, viewMode } = app;
   let list = <ReactLoading type='bars' color='#000' height={50} width={50} />;
@@ -41,6 +42,9 @@ export default function Home({ stuff }) {
         />
       </Head>
       <Menu />
+      <aside className='aside'>
+        <Numbers />
+      </aside>
       <main className='page'>
         <div className={viewMode ? `${grid} ${gridGallery}` : grid}>{list}</div>
       </main>

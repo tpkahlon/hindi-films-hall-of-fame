@@ -22,7 +22,18 @@ a {
 
 .page {
   margin-top: 4.25rem;
-  margin-left: 2.25rem;
+  margin-left: 3.25rem;
+  min-height: calc(100vh - 3.25rem);
+}
+
+.aside {
+  position: fixed;
+  top: 3.25rem;
+  left: 0;
+  width: 3.25rem;
+  height: 100%;
+  padding-top: 1rem;
+  box-shadow: 0 0 0.3rem 0.15rem $shadow;
 }
 
 .dark-mode {

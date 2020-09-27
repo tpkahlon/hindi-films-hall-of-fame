@@ -1,10 +1,12 @@
+import App from 'next/app';
 import '../styles/_variables.scss';
 import '../styles/app.scss';
 import React, { useEffect, useState } from 'react';
 import Context from '../components/Context/Context.js';
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp = ({ Component, pageProps, corona }) => {
   const [app, setApp] = useState({
+    corona,
     data: null,
     darkMode: null,
     viewMode: null,
@@ -36,6 +38,7 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <Context.Provider
       value={{
+        corona,
         app,
         handleDarkMode,
         handleViewMode,
@@ -46,6 +49,14 @@ const MyApp = ({ Component, pageProps }) => {
       <Component {...pageProps} />
     </Context.Provider>
   );
+};
+
+MyApp.getInitialProps = async (appContext) => {
+  const appProps = await App.getInitialProps(appContext);
+  const req = await fetch(`https://api.covid19api.com/summary`);
+  const corona = await req.json();
+
+  return { ...appProps, corona };
 };
 
 export default MyApp;
