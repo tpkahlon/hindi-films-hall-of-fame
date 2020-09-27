@@ -1,4 +1,5 @@
 import React, { useState, useContext } from 'react';
+import ReactLoading from 'react-loading';
 import Head from 'next/head';
 import Menu from '../components/Menu/Menu';
 import Person from '../components/Person/Person';
@@ -11,7 +12,7 @@ const sortList = (a, b) =>
 export default function Home({ stuff }) {
   const { app } = useContext(Context);
   const { data, maleMode, femaleMode, viewMode } = app;
-  let list = <div>Loading...</div>;
+  let list = <ReactLoading type='bars' color='#000' height={50} width={50} />;
   if (data !== null) {
     if (maleMode) {
       list = data
