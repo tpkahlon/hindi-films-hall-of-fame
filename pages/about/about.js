@@ -1,11 +1,10 @@
 import Head from 'next/head';
 import Menu from '../../components/Menu/Menu';
 import Numbers from '../../components/Numbers/Numbers';
-import Layout from '../../components/Layout/Layout';
 
 export default function About({ darkMode }) {
   return (
-    <Layout>
+    <div>
       <Head>
         <title>About - Indians</title>
         <link
@@ -48,6 +47,6 @@ export default function About({ darkMode }) {
           .
         </p>
       </main>
-    </Layout>
+    </div>
   );
 }

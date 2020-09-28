@@ -6,7 +6,6 @@ import Menu from '../components/Menu/Menu';
 import Person from '../components/Person/Person';
 import Context from '../components/Context/Context.js';
 import { grid, gridGallery } from '../styles/index.module.scss';
-import Layout from '../components/Layout/Layout';
 
 const sortList = (a, b) =>
   a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1;
@@ -33,7 +32,7 @@ export default function Home() {
     }
   }
   return (
-    <Layout>
+    <>
       <Head>
         <title>Home - Indians</title>
         <link
@@ -49,6 +48,6 @@ export default function Home() {
       <main className='page'>
         <div className={viewMode ? `${grid} ${gridGallery}` : grid}>{list}</div>
       </main>
-    </Layout>
+    </>
   );
 }
