@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Menu from '../../components/Menu/Menu';
 import Numbers from '../../components/Numbers/Numbers';
-import Layout from '../Layout/Layout';
+import Layout from '../../components/Layout/Layout';
 
 export default function About({ darkMode }) {
   return (
