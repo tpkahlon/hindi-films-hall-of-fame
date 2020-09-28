@@ -1,10 +1,11 @@
 import Head from 'next/head';
 import Menu from '../../components/Menu/Menu';
 import Numbers from '../../components/Numbers/Numbers';
+import Layout from '../Layout/Layout';
 
 export default function About({ darkMode }) {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>About - Hall of Fame</title>
         <link
@@ -47,6 +48,6 @@ export default function About({ darkMode }) {
           .
         </p>
       </main>
-    </div>
+    </Layout>
   );
 }
