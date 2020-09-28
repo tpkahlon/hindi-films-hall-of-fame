@@ -7,7 +7,7 @@ export default function About({ darkMode }) {
   return (
     <Layout>
       <Head>
-        <title>About - Hall of Fame</title>
+        <title>About - Indians</title>
         <link
           rel='shortcut icon'
           href='https://www.flaticon.com/svg/static/icons/svg/610/610333.svg'

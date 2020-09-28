@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <Layout>
       <Head>
-        <title>Hindi Icons - Hall of Fame</title>
+        <title>Home - Indians</title>
         <link
           rel='shortcut icon'
           href='https://www.flaticon.com/svg/static/icons/svg/610/610333.svg'
