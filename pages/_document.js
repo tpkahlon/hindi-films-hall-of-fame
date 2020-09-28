@@ -10,14 +10,20 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-162341061-20"></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){ dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'UA-162341061-20');
-          </script>
+          <script
+            async
+            src='https://www.googletagmanager.com/gtag/js?id=UA-162341061-20'
+          ></script>
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){ dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-162341061-20');
+            `,
+            }}
+          ></script>
         </Head>
         <body>
           <Main />
