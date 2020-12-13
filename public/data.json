@@ -64,7 +64,7 @@
   },
   {
     "id": 10,
-    "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Jitendra_Kumar_%28Jeetu%29.jpg/440px-Jitendra_Kumar_%28Jeetu%29.jpg",
+    "thumbnail": "https://m.media-amazon.com/images/M/MV5BY2Q1ZjJkNmQtMzMwYi00YzE5LWI1MjctOTJhNDEzM2UxYzQ4XkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_UY1200_CR253,0,630,1200_AL_.jpg",
     "src": "https://youtu.be/O6lRVOLZQ5M",
     "name": "Jitendra Kumar",
     "gender": "male"
@@ -145,13 +145,6 @@
     "src": "https://youtu.be/FMXHjJgBBf0",
     "name": "Asrani",
     "gender": "male"
-  },
-  {
-    "id": 22,
-    "thumbnail": "https://femina.wwmindia.com/content/2020/jan/kanganaranaut1579165389.jpg",
-    "src": "https://youtu.be/NwhpR7Mc5FY",
-    "name": "Kangana Ranaut",
-    "gender": "female"
   },
   {
     "id": 23,
