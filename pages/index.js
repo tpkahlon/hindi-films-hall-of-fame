@@ -37,7 +37,7 @@ export default function Home() {
         <title>Home - Indians</title>
         <link
           rel='shortcut icon'
-          href='https://www.flaticon.com/svg/static/icons/svg/610/610333.svg'
+          href='./logo.svg'
           type='image/x-icon'
         />
       </Head>

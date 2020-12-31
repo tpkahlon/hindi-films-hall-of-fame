@@ -28,15 +28,21 @@ a {
 
 .aside {
   position: fixed;
-  top: 3.25rem;
+  top: calc(3.5rem - 1px);
   left: 0;
-  width: 3.25rem;
+  width: 3.5rem;
   height: 100%;
   padding-top: 1rem;
-  box-shadow: 0 0 0.3rem 0.15rem $shadow;
+  border: 1px solid $shadow;
+  // box-shadow: 0 0 0.3rem 0.15rem $shadow;
 }
 
 .dark-mode {
   color: $white;
   background: $darkMode;
+
+  nav {
+    color: inherit;
+    background: inherit;
+  }
 }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { menu } from './Menu.module.scss';
 import { MdStars } from 'react-icons/md';
 import { RiLightbulbLine } from 'react-icons/ri';
-import { GrContactInfo } from 'react-icons/gr';
+import { FaUserCircle } from 'react-icons/fa';
 import { BsGrid3X3GapFill } from 'react-icons/bs';
 import { IoIosMale, IoMdFemale } from 'react-icons/io';
 import Context from '../Context/Context';
@@ -16,7 +16,7 @@ const MenuButton = React.forwardRef(({ onClick, href }, ref) => (
 
 const AboutButton = React.forwardRef(({ onClick, href }, ref) => (
   <a href={href} onClick={onClick} ref={ref}>
-    <GrContactInfo />
+    <FaUserCircle />
   </a>
 ));
 
