@@ -56,6 +56,7 @@ const Text = ({ figures }) => {
 const Numbers = () => {
   const { corona } = useContext(Context);
   const { Global, Countries } = corona;
+  if(Countries === null) return;
   const India = Countries.find((i) => i.CountryCode === 'IN');
   return (
     <nav className={numbers}>
